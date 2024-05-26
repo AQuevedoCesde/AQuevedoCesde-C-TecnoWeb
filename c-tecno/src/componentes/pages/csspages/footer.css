@@ -1,0 +1,50 @@
+
+
+  /* Eslogan estilos */
+  .slogan{
+    background-color: #0033A0;
+    display: flex;
+    height: 150px;
+    justify-content: center;
+    align-items: center;
+    margin-top: -5px;
+  }
+ 
+  #textSlogan{
+    color: whitesmoke;
+    font-size: x-large;
+    font-weight: bold;
+    margin-left: -40px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+/* 
+  Contacto estilos */
+
+  .Contacto{
+    display: flex;
+    background-color: black;
+    height: 200px;
+    align-items: center;
+    display: flex;
+    justify-content: space-evenly;
+    color: white;
+  }
+
+  #LogoContenedor{
+    display: flex;
+    flex-direction: column;
+    color: white;
+  }
+  img[alt="LogoPc"]{
+    width: 100px;
+    margin-top: 50px;
+  }
+  #LogoFooter{
+    display: flex;
+  }
+  h3{
+    color: white;
+    align-self: center;
+    margin-top: 60px;
+    margin-left: 20PX;
+  }
