@@ -4,6 +4,8 @@ import Login from './componentes/auth/Login.jsx'
 import {createBrowserRouter,RouterProvider} from 'react-router-dom'
 
 
+
+
 let router = createBrowserRouter([
     {
         path:'/',
