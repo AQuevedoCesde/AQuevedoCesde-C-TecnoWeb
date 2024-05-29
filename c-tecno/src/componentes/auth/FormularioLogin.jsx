@@ -25,14 +25,14 @@ function FormularioLogin() {
 
   return (
     <>
-      <div className="w-full h-svh bg-red-400 flex-col   m-8">
+    <div className="w-[70%] h-lg bg-red-400 flex-col   m-10">
         <h2 className="text-center text-[5vh] font-sans flex justify-center bg-slate-500">
           Bienvenido
         </h2>
         <p className="text-xl m-2 ">Correo:</p>
 
         <input
-          className="bg-white  h-10 py-1 rounded-xl border-double border-gray-500 focus:outline-none  p-4"
+          className="bg-white w-full  h-12 py-1 rounded-xl border-double border-gray-500 focus:outline-none  p-4"
           onChange={(e) => {
             setUsername(e.target.value);
           }}
@@ -42,7 +42,7 @@ function FormularioLogin() {
         <p className="text-xl m-2 ">Contraseña:</p>
 
         <input
-          className=" bg-white text-wrap h-10 py-1  rounded-xl border-gray-400 focus:outline-none p-4"
+          className=" bg-white w-full text-wrap h-12 py-1  rounded-xl border-gray-400 focus:outline-none p-4"
           onChange={(e) => {
             setUserPassword(e.target.value);
           }}
@@ -52,7 +52,7 @@ function FormularioLogin() {
 
         <div className="flex justify-center">
           <button
-            className="w-1/2 font-bold bg-blue-600 text-white py-1 h-10 flex justify-center mt-8 rounded-xl  "
+            className="w-full font-bold bg-blue-600 text-white p-3 h-12 flex justify-center mt-8 rounded-xl  "
             onClick={entrarUsuario}
           >
             {" "}
@@ -63,7 +63,7 @@ function FormularioLogin() {
         <div className="flex justify-center">
           <h4>
             <a
-              className=" flex justify-center p-4 text-blue-600 font-bold text-ellipsis"
+              className=" flex justify-center p-4 text-blue-600 font-bold text-"
               href="#"
             >
               Crear una cuenta
