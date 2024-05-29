@@ -1,18 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+/* 
 body {
   margin: 0%;
   padding: 0%;
-}
-
-main {
-  width: 100%;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  background-color: #003785;
 }
 
 #parrafoCorreo {
@@ -22,7 +14,7 @@ main {
 .fondoderecho {
   width: 48%;
   height: 92vh;
-  background: rgb(0, 51, 160);
+  background: rgb(59, 160, 0);
   background: linear-gradient(
     257deg,
     rgba(0, 51, 160, 1) 19%,
@@ -40,8 +32,8 @@ img[alt="logodefinitivo"] {
 }
 
 .contenedorformulario {
-  width: 95%;
-  height: 92vh;
+  width: 20%;
+  height: 20vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -117,4 +109,4 @@ img[alt="iconogoogle"] {
 button {
   border: none;
   background-color: #fcfcfc;
-}
+} */

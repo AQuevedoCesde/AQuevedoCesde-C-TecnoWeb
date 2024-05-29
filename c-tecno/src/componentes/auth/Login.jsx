@@ -1,12 +1,12 @@
 import FondoFormulario from "./FondoFormulario"
 import FondoImagenLogin from "./FondoImagenLogin"
-import '../pages/csspages/login.css'
+
 
 
 function Login() {
   return (
 
-         <main>
+         <main className="bg-blue-800 w-full h-screen flex items-center ">
             <FondoFormulario/>
             <FondoImagenLogin/>
         </main> 

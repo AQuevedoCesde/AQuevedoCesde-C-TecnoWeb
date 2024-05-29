@@ -25,48 +25,75 @@ function FormularioLogin() {
 
   return (
     <>
-      <h2>Bienvenido</h2>
-      <p id="parrafoCorreo">Correo:</p>
+      <div className="w-full h-svh bg-red-400 flex-col   m-8">
+        <h2 className="text-center text-[5vh] font-sans flex justify-center bg-slate-500">
+          Bienvenido
+        </h2>
+        <p className="text-xl m-2 ">Correo:</p>
 
-      <input
-        onChange={(e) => {
-          setUsername(e.target.value);
-        }}
-        type="text"
-        placeholder="Ingrese su correo electronico"
-      />
-      <p>Contraseña:</p>
+        <input
+          className="bg-white  h-10 py-1 rounded-xl border-double border-gray-500 focus:outline-none  p-4"
+          onChange={(e) => {
+            setUsername(e.target.value);
+          }}
+          type="text"
+          placeholder="Ingrese su correo electronico"
+        />
+        <p className="text-xl m-2 ">Contraseña:</p>
 
-      <input
-        onChange={(e) => {
-          setUserPassword(e.target.value);
-        }}
-        type="password"
-        placeholder="Ingrese su contraseña"
-      />
+        <input
+          className=" bg-white text-wrap h-10 py-1  rounded-xl border-gray-400 focus:outline-none p-4"
+          onChange={(e) => {
+            setUserPassword(e.target.value);
+          }}
+          type="password"
+          placeholder="Ingrese su contraseña"
+        /> 
 
-      <button className="botoningreso" onClick={entrarUsuario}>
-        {" "}
-        INGRESAR{" "}
-      </button>
+        <div className="flex justify-center">
+          <button
+            className="w-1/2 font-bold bg-blue-600 text-white py-1 h-10 flex justify-center mt-8 rounded-xl  "
+            onClick={entrarUsuario}
+          >
+            {" "}
+            INGRESAR{" "}
+          </button>
+        </div>
 
-      <h4>
-        <a href="#">Crear una cuenta</a>
-      </h4>
+        <div className="flex justify-center">
+          <h4>
+            <a
+              className=" flex justify-center p-4 text-blue-600 font-bold text-ellipsis"
+              href="#"
+            >
+              Crear una cuenta
+            </a>
+          </h4>
+        </div>
 
-      <div className="contenedoriconos">
-        <a
-          target="_blank"
-          href="https://accounts.google.com/AccountChooser/signinchooser?service=mail&continue=https%3A%2F%2Fmail.google.com%2Fmail%2F&flowName=GlifWebSignIn&flowEntry=AccountChooser&ec=asw-gmail-globalnav-signin&theme=mn&ddm=0"
-        >
-          <img src={google} alt="iconogoogle" />
-        </a>
-        <a target="_blank" href="https://chat.openai.com/">
-          <img src={chatgpt} alt="iconochatgpt" />
-        </a>
-        <a target="_blank" href="https://web.whatsapp.com/">
-          <img src={whatsapp} alt="iconowhatsapp" />
-        </a>
+        <div className=" flex flex-row justify-center ">
+          <a
+            className="w-10 h-10 bg-white ml-4 "
+            target="_blank"
+            href="https://accounts.google.com/AccountChooser/signinchooser?service=mail&continue=https%3A%2F%2Fmail.google.com%2Fmail%2F&flowName=GlifWebSignIn&flowEntry=AccountChooser&ec=asw-gmail-globalnav-signin&theme=mn&ddm=0"
+          >
+            <img src={google} alt="iconogoogle" />
+          </a>
+          <a
+            className="w-10 h-10 bg-white ml-4 "
+            target="_blank"
+            href="https://chat.openai.com/"
+          >
+            <img src={chatgpt} alt="iconochatgpt" />
+          </a>
+          <a
+            className="w-10 h-10 bg-white ml-4 "
+            target="_blank"
+            href="https://web.whatsapp.com/"
+          >
+            <img src={whatsapp} alt="iconowhatsapp" />
+          </a>
+        </div>
       </div>
     </>
   );
