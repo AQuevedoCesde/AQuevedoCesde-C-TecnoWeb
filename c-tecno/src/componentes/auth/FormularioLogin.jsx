@@ -25,7 +25,7 @@ function FormularioLogin() {
 
   return (
     <>
-    <div className="w-[70%] h-lg  flex-col m-10 " >
+      <div className="w-[70%] h-lg  flex-col m-10 ">
         <h2 className="text-center text-5xl font-sans font-semibold flex  justify-center  mb-10">
           Bienvenido
         </h2>
@@ -48,7 +48,7 @@ function FormularioLogin() {
           }}
           type="password"
           placeholder="Ingrese su contraseña"
-        /> 
+        />
 
         <div className="flex justify-center">
           <button
