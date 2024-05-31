@@ -31,9 +31,32 @@ function FormularioLogin() {
     let UsuarioEncontrado = dbUsuario.find((usuario)=> usuario.email === email && usuario.contrasena == contrasena )
       if(UsuarioEncontrado){
        contex.setIdentificacion(UsuarioEncontrado.cedula)
+       Swal.fire({
+        icon: "success",
+        title: "Bienvenido a tu cuenta",
+        showConfirmButton: false,
+        timer: 1500
+      });
        redireccion("/")
       }else{
-       console.log("todomal")
+        let timerInterval;
+        Swal.fire({
+                 icon: "error",
+                 title: "Usuario no registrado",
+                 html: "Porfavor verifica tus datos",
+                 timer: 2000,
+                 timerProgressBar: true,
+                 didOpen: () => {
+                   Swal.showLoading();
+                   const timer = Swal.getPopup().querySelector("b");
+                   timerInterval = setInterval(() => {
+                     timer.textContent = `${Swal.getTimerLeft()}`;
+                   }, 100);
+                 },
+                 willClose: () => {
+                   clearInterval(timerInterval);
+                 }
+               })
       }
   }
 
