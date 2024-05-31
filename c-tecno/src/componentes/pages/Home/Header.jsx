@@ -1,12 +1,12 @@
-import './csspages/header.css'
-import logo from "../../assets/logodefinitivo.png"
+import './../csspages/header.css'
+import logo from "../../../assets/logodefinitivo.png"
 import { useNavigate } from 'react-router-dom'
 
 function Header() {
     let redirigir = useNavigate();
 
     function inicioDeSesion (){
-        redirigir('/')
+        redirigir('/login')
     }
 
   return (

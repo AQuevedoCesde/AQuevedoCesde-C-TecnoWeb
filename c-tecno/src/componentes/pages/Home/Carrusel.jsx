@@ -1,4 +1,4 @@
-import'../pages/csspages/carrusel.css'
+import'../csspages/carrusel.css'
 function Carrusel() {
   return (
     <>
