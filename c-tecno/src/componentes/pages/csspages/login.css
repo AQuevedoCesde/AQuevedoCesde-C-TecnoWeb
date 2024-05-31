@@ -2,10 +2,3 @@
 @tailwind components;
 @tailwind utilities;
 
-input:hover {
-  border-color: #81c9fa;
-}
-
-.botoningreso:focus {
-  background-color: #2196f3;
-}

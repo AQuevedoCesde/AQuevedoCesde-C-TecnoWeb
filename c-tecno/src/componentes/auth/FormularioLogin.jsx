@@ -25,24 +25,24 @@ function FormularioLogin() {
 
   return (
     <>
-    <div className="w-[70%] h-lg bg-red-400 flex-col   m-10">
-        <h2 className="text-center text-[5vh] font-sans flex justify-center bg-slate-500">
+    <div className="w-[70%] h-lg  flex-col m-10 " >
+        <h2 className="text-center text-5xl font-sans font-semibold flex  justify-center  mb-10">
           Bienvenido
         </h2>
-        <p className="text-xl m-2 ">Correo:</p>
+        <p className="text-2xl m-2 font-sans font-medium ">Correo:</p>
 
         <input
-          className="bg-white w-full  h-12 py-1 rounded-xl border-double border-gray-500 focus:outline-none  p-4"
+          className=" w-full h-12 py-1 rounded-xl p-4 border border-gray-300 focus:outline-blue-400  "
           onChange={(e) => {
             setUsername(e.target.value);
           }}
           type="text"
           placeholder="Ingrese su correo electronico"
         />
-        <p className="text-xl m-2 ">Contraseña:</p>
+        <p className="text-2xl m-2 font-sans font-medium ">Contraseña:</p>
 
         <input
-          className=" bg-white w-full text-wrap h-12 py-1  rounded-xl border-gray-400 focus:outline-none p-4"
+          className=" bg-white w-full  h-12 py-1 border   rounded-xl border-gray-300 focus:outline-blue-400 p-4"
           onChange={(e) => {
             setUserPassword(e.target.value);
           }}
@@ -52,7 +52,7 @@ function FormularioLogin() {
 
         <div className="flex justify-center">
           <button
-            className="w-full font-bold bg-blue-600 text-white p-3 h-12 flex justify-center mt-8 rounded-xl  "
+            className="w-full font-bold bg-blue-700 text-white p-2 h-12 flex justify-center mt-8 rounded-xl text-lg ease-in duration-300 hover:bg-sky-500"
             onClick={entrarUsuario}
           >
             {" "}
@@ -63,7 +63,7 @@ function FormularioLogin() {
         <div className="flex justify-center">
           <h4>
             <a
-              className=" flex justify-center p-4 text-blue-600 font-bold text-"
+              className=" flex justify-center p-2 text-blue-600 font-sans font-semibold  text-2xl "
               href="#"
             >
               Crear una cuenta
@@ -73,21 +73,21 @@ function FormularioLogin() {
 
         <div className=" flex flex-row justify-center ">
           <a
-            className="w-10 h-10 bg-white ml-4 "
+            className="w-12 h-12 bg-white m-2 "
             target="_blank"
             href="https://accounts.google.com/AccountChooser/signinchooser?service=mail&continue=https%3A%2F%2Fmail.google.com%2Fmail%2F&flowName=GlifWebSignIn&flowEntry=AccountChooser&ec=asw-gmail-globalnav-signin&theme=mn&ddm=0"
           >
             <img src={google} alt="iconogoogle" />
           </a>
           <a
-            className="w-10 h-10 bg-white ml-4 "
+            className="w-12 h-12 bg-white m-2 "
             target="_blank"
             href="https://chat.openai.com/"
           >
             <img src={chatgpt} alt="iconochatgpt" />
           </a>
           <a
-            className="w-10 h-10 bg-white ml-4 "
+            className="w-12 h-12 bg-white m-2"
             target="_blank"
             href="https://web.whatsapp.com/"
           >
