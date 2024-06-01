@@ -30,7 +30,9 @@ function FormularioLogin() {
   function buscarUsuario() {
     let UsuarioEncontrado = dbUsuario.find((usuario)=> usuario.email === email && usuario.contrasena == contrasena )
       if(UsuarioEncontrado){
-       contex.setIdentificacion(UsuarioEncontrado.cedula)
+       contex.setusuariogeneral(UsuarioEncontrado)
+       contex.setBoton("btnoculto")
+       contex.setinfUsuario("informacionUsuario")
        Swal.fire({
         icon: "success",
         title: "Bienvenido a tu cuenta",

@@ -3,14 +3,22 @@ import {createContext,useState } from "react";
 export const InformacionCuenta = createContext()
 
 export const ProveedorInformacion = ({children}) =>{
-    const [identificacion, setIdentificacion] = useState("")
+    const [usuariogeneral, setusuariogeneral] = useState({})
+    const [boton, setBoton] = useState("btn")
+    const [infUsuario, setinfUsuario] = useState("informacionOculta")
 
-console.log(identificacion)
+
+
+console.log(usuariogeneral + boton + infUsuario)
 
 return(
     <InformacionCuenta.Provider value={{
-        identificacion,
-        setIdentificacion
+        usuariogeneral,
+        setusuariogeneral,
+        boton,
+        setBoton,
+        infUsuario,
+        setinfUsuario
     }}>
         {children}
     </InformacionCuenta.Provider>
