@@ -1,17 +1,13 @@
-import FondoFormulario from "./FondoFormulario"
-import FondoImagenLogin from "./FondoImagenLogin"
-import '../pages/csspages/login.css'
-
+import FondoFormulario from "./FondoFormulario";
+import FondoImagenLogin from "./FondoImagenLogin";
 
 function Login() {
   return (
-
-         <main>
-            <FondoFormulario/>
-            <FondoImagenLogin/>
-        </main> 
-
-  )
+    <main className="bg-blue-900 w-full h-screen flex items-center  ">
+      <FondoFormulario />
+      <FondoImagenLogin />
+    </main>
+  );
 }
 
-export default Login
+export default Login;

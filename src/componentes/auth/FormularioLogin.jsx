@@ -21,14 +21,14 @@ function FormularioLogin() {
   return (
     <>
         <h2 >Bienvenido</h2>
-        <p id="parrafoCorreo">Correo:</p>
+        <p id="parrafoCorreo">CORREO:</p>
 
         <input onChange={(e) => {setUsername(e.target.value)}} type="text" placeholder="Ingrese su correo electronico" />
          <p>Contraseña:</p>
 
         <input onChange={(e) => {setUserPassword(e.target.value);}} type="password" placeholder="Ingrese su contraseña" />
   
-         <button className="botoningreso" onClick={entrarUsuario} > INGRESAR </button>
+         <button className="bg-400" onClick={entrarUsuario} > INGRESAR </button>
          
          <h4><a href="#">Crear una cuenta</a></h4>
 
