@@ -5,7 +5,7 @@ import '../pages/csspages/login.css'
 
 function Login() {
   return (
-
+          
          <main>
             <FondoFormulario/>
             <FondoImagenLogin/>

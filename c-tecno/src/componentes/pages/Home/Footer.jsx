@@ -1,6 +1,6 @@
 
-import logo from "../../assets/logodefinitivo.png"
-import './csspages/footer.css'
+import logo from "../../../assets/logodefinitivo.png"
+import './../csspages/footer.css'
 
 function Footer() {
   return (
